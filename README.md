@@ -1,7 +1,7 @@
 # TicTacToe-Android
 
 ## About
-This application was made in the year 2021 for a exam of the course IF4101 (Languages for Business Applications) of the University of Costa Rica.
+This application was made in the year 2022 for a exam of the course IF4101 (Languages for Business Applications) of the University of Costa Rica.
 
 ## Documentation
 
