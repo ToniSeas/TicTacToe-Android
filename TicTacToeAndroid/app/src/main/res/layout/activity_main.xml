@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+<TextView
+android:id="@+id/sIdLabel"
+android:layout_width="0dp"
+android:layout_height="30dp"
+android:layout_marginTop="108dp"
+
+android:fontFamily="sans-serif-condensed"
+android:text="Carnet"
+android:textColor="@color/black"
+app:autoSizeTextType="uniform"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHeight_percent="0.04"
+app:layout_constraintHorizontal_bias="0.208"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintWidth_percent="0.30" />
+
+<TextView
+android:id="@+id/sPasswordLabel"
+android:layout_width="0dp"
+android:layout_height="30dp"
+android:layout_marginTop="32dp"
+
+android:autoSizeTextType="uniform"
+
+android:fontFamily="sans-serif-condensed"
+android:text="Contraseña"
+android:textColor="@color/black"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHeight_percent="0.04"
+app:layout_constraintHorizontal_bias="0.243"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/sIdInput"
+app:layout_constraintWidth_percent="0.40" />
+
+    <EditText
+    android:id="@+id/sIdInput"
+    android:layout_width="0dp"
+    android:layout_height="40dp"
+    android:autoSizeTextType="uniform"
+    android:background="@drawable/input_white_background"
+    android:fontFamily="sans-serif-medium"
+
+    android:hint="Nombre"
+
+    android:textAlignment="center"
+
+    android:textColor="@color/bgBlue"
+    android:textColorHint="@color/textGray"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHeight_percent="0.05"
+    app:layout_constraintHorizontal_bias="0.495"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/sIdLabel"
+    app:layout_constraintWidth_percent="0.7" />
+
+    <EditText
+    android:id="@+id/sPasswordInput"
+    android:layout_width="0dp"
+    android:layout_height="40dp"
+    android:autoSizeTextType="uniform"
+    android:background="@drawable/input_white_background"
+    android:fontFamily="sans-serif-medium"
+    android:hint="Contraseña"
+
+    android:inputType="textPassword"
+    android:maxLength="30"
+
+    android:textAlignment="center"
+    android:textColor="@color/bgBlue"
+
+    android:textColorHint="@color/textGray"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHeight_percent="0.05"
+    app:layout_constraintHorizontal_bias="0.487"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/sPasswordLabel"
+    app:layout_constraintWidth_percent="0.7" />
+
+    <Button
+        android:id="@+id/logInBtn"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/btn_blue_background"
+
+        android:text="Iniciar Sesión"
+        android:textColor="@color/textOrange"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sPasswordInput"
+        app:layout_constraintVertical_bias="0.108"
+        app:layout_constraintWidth_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
